@@ -8,7 +8,7 @@ import NavBar from './components/NavBar.vue';
     <header>
       <NavBar />
     </header>
-    <main class="container mx-auto p-4 bg-slate-700">
+    <main class="container mx-auto p-4 bg-slate-700 min-h-screen">
 
 
       <RouterView />
