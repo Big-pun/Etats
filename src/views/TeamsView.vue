@@ -9,14 +9,23 @@
         </RouterLink>
       </li>
     </ul>
+
+    <RouterLink :to="`/addteam`" class=" block mx-auto w-fit mt-8 p-4 text-center bg-slate-900 rounded-lg shadow-md">
+      Add a team
+    </RouterLink>
+    <router-view />
   </div>
 </template>
 
 <script setup>
   import { useTeamsStore } from "@/stores/teams";
+import AddTeamView from "./AddTeamView.vue";
+
 
   const teamsStore = useTeamsStore();
   const teams = teamsStore.teams;
+
+
 </script>
 
 <style scoped>
